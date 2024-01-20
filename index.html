@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СТИКЕРПАНК</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="css/sticker.css">
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+
+
+        <header>
+            <div class="container">
+                <div class="header__body">
+                    <div class="menu header__menu">
+                        <a href="#!" class="logo">
+                            <img src="images/logo/logo.svg" alt="NOO">
+                        </a>
+                        <ul class="menu__list header__list">
+                            <li class="menu__li header__li"><a href="#!" class="menu__link header__link">Авторы</a></li>
+                            <li class="menu__li header__li"><a href="#!" class="menu__link header__link">Сервисы</a>
+                            </li>
+                            <li class="menu__li header__li"><a href="#!" class="menu__link header__link">Коллекции</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__button popup">
+                        <button class="header__button-wallet">
+                            <span>Кошелёк</span>
+                        </button>
+                    </div>
+                    <div class="header__button-wallet-mobile popup">
+                        <a href="#!"><img src="images/layout/header_wallet.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="menu-mobile header__hidden">
+            <ul class="menu-mobile__list">
+                <li class="menu__li header__li"><a href="#!" class="menu__link header__link">Коллекции</a></li>
+                <li class="menu__li header__li"><a href="#!" class="menu__link header__link">Авторы</a></li>
+                <li class="menu__li header__li"><a href="#!" class="menu__link header__link">Сервисы</a></li>
+            </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="popup-overlay">
+            <a class="popup-overlay__cross">
+                <span></span>
+                <span></span>
+            </a>
+            <div class="popup-overlay__popup">
+                <p>Текст в Окне</p>
+            </div>
+        </div>
+
+        <main>
+
+
+            <section class="layout">
+                <div class="container">
+                    <div class="layout__body">
+                        <div class="layout__content">
+                            <h1 class="layout__title">
+                                Площадка для реализации криптостикеров
+                            </h1>
+                            <div class="layout__buttons">
+                                <button class="layout__buy-btn">
+                                    <span>Купить</span>
+                                </button>
+                                <button class="layout__author-btn">
+                                    <span>Стать автором</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="layout__img">
+                            <img src="images/layout/stickers_heroes.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section class="auction">
+                <div class="container">
+
+
+                    <div class="auction__body">
+                        <h1 class="section-title">
+                            Аукцион
+                        </h1>
+                        <div class="auction__main">
+                            <div class="auction__image-item">
+                                <img src="images/auction/Witcher.jpg" alt="" class="auction__main-image">
+                            </div>
+                            <div class="auction__widgets">
+                                <div class="auction__widgets-item">
+                                    <div class="auction__bet">
+                                        <p class="auction__bet-info">Ставка:</p>
+                                        <h2 class="auction__bet-value">0.10 ETH</h2>
+                                        <p class="auction__bet-price">$351.24</p>
+                                    </div>
+                                    <div class="auction__timer">
+                                        <p class="auction__timer-info">Окончание через:</p>
+                                        <div class="auction__timer-clock">
+                                            <div class="auction__numbers">
+                                                <h2 class="auction__number" id="day">00</h2>
+                                                <p class="auction__unit-time">Дней</p>
+                                            </div>
+                                            <div class="auction__numbers">
+                                                <h2 class="auction__number" id="hour">00</h2>
+                                                <p class="auction__unit-time">Часов</p>
+                                            </div>
+                                            <div class="auction__numbers">
+                                                <h2 class="auction__number" id="minute">00</h2>
+                                                <p class="auction__unit-time">Минут</p>
+                                            </div>
+                                            <div class="auction__numbers">
+                                                <h2 class="auction__number" id="second">00</h2>
+                                                <p class="auction__unit-time">Секунд</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="section-button auction__btn popup">
+                                    <span>Cделать ставку</span>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <div class="auction__another-auction">
+                            <h3 class="auction__subtitle">
+                                Другие аукционы
+                            </h3>
+
+                            <div class="auction__another-block slider1" id="slider1">
+
+                                    <div class="swiper-wrapper auction__another-items">
+                                        <div class="auction__another-item swiper-slide">
+                                            <div class="auction__another-img">
+                                                <img src="images/auction/1.jpg" alt="">
+                                            </div>
+
+                                            <div class="auction__another-text">
+                                                <p>Alien (green) e_e</p>
+                                                <p>0.02 ETH</p>
+                                                <p>03 часа 25 мин 23 сек</p>
+                                            </div>
+                                        </div>
+                                        <div class="auction__another-item swiper-slide">
+                                            <div class="auction__another-img">
+                                                <img src="images/auction/7.jpg" alt="">
+                                            </div>
+
+                                            <div class="auction__another-text">
+                                                <p>Robert_Wward</p>
+                                                <p>IAMDECEPTICON</p>
+                                                <p>55 мин 18 сек</p>
+                                            </div>
+                                        </div>
+                                        <div class="auction__another-item swiper-slide">
+                                            <div class="auction__another-img">
+                                                <img src="images/auction/3.jpg" alt="">
+                                            </div>
+
+                                            <div class="auction__another-text">
+                                                <p>CoBRRRa</p>
+                                                <p>0.5 ETH</p>
+                                                <p>15 мин 03 сек</p>
+                                            </div>
+                                        </div>
+                                        <div class="auction__another-item swiper-slide">
+                                            <div class="auction__another-img">
+                                                <img src="images/auction/4.jpg" alt="">
+                                            </div>
+
+                                            <div class="auction__another-text">
+                                                <p>Diamonds (4)</p>
+                                                <p>0.008 ETH</p>
+                                                <p>23 часа 05 мин 08 сек</p>
+                                            </div>
+                                        </div>
+                                        <div class="auction__another-item swiper-slide">
+                                            <div class="auction__another-img">
+                                                <img src="images/auction/5.jpg" alt="">
+                                            </div>
+
+                                            <div class="auction__another-text">
+                                                <p>Holofobia-2</p>
+                                                <p>1.0 ETH</p>
+                                                <p>01 час 15 мин 55 сек</p>
+                                            </div>
+                                        </div>
+                                        <div class="auction__another-item swiper-slide">
+                                            <div class="auction__another-img">
+                                                <img src="images/auction/6.jpg" alt="">
+                                            </div>
+                                            <div class="auction__another-text">
+                                                <p>Baby Yoda 1</p>
+                                                <p>0.2 ETH</p>
+                                                <p>01 час 28 мин 11 сек</p>
+                                            </div>
+                                        </div>
+                                        <div class="auction__another-item swiper-slide">
+                                            <div class="auction__another-img">
+                                                <img src="images/auction/7.jpg" alt="">
+                                            </div>
+
+                                            <div class="auction__another-text">
+                                                <p>alien vs. predator (01)</p>
+                                                <p>0.09 ETH</p>
+                                                <p>08 часов 44 мин 43 сек</p>
+                                            </div>
+                                        </div>
+                                        <div class="auction__another-item swiper-slide">
+                                            <div class="auction__another-img">
+                                                <img src="images/auction/8.jpg" alt="">
+                                            </div>
+
+                                            <div class="auction__another-text">
+                                                <p>Ghostbusterrrrrrrs</p>
+                                                <p>0.09 ETH</p>
+                                                <p>18 мин 12 сек</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- <div class="auction__hidden"> -->
+                                        <div class="auction__another-item swiper-slide" data-hidden="">
+                                            <div class="auction__another-img">
+                                                <img src="images/auction/1.jpg" alt="">
+                                            </div>
+
+                                            <div class="auction__another-text">
+                                                <p>Alien (green) e_e__Скрытый1</p>
+                                                <p>0.02 ETH</p>
+                                                <p>03 часа 25 мин 23 сек</p>
+                                            </div>
+                                        </div>
+                                        <div class="auction__another-item swiper-slide" data-hidden="">
+                                            <div class="auction__another-img">
+                                                <img src="images/auction/5.jpg" alt="">
+                                            </div>
+
+                                            <div class="auction__another-text">
+                                                <p>Robert_Wward__Скрытый2</p>
+                                                <p>IAMDECEPTICON</p>
+                                                <p>55 мин 18 сек</p>
+                                            </div>
+                                        </div>
+                                        <div class="auction__another-item swiper-slide" data-hidden="">
+                                            <div class="auction__another-img">
+                                                <img src="images/auction/3.jpg" alt="">
+                                            </div>
+
+                                            <div class="auction__another-text">
+                                                <p>CoBRRRa__Скрытый3</p>
+                                                <p>0.5 ETH</p>
+                                                <p>15 мин 03 сек</p>
+                                            </div>
+                                        </div>
+                                        <div class="auction__another-item swiper-slide" data-hidden="">
+                                            <div class="auction__another-img">
+                                                <img src="images/auction/4.jpg" alt="">
+                                            </div>
+
+                                            <div class="auction__another-text">
+                                                <p>Diamonds (4)__Скрытый4</p>
+                                                <p>0.008 ETH</p>
+                                                <p>23 часа 05 мин 08 сек</p>
+                                            </div>
+                                        </div>
+                                        <!-- </div> -->
+
+                                    </div>
+                                    <div class="sw-pagination">
+
+                                    </div>
+
+                                <button class="section-button auction__another-btn">
+                                    <span>Все аукционы</span>
+                                </button>
+                            </div>
+
+                        </div>
+
+
+                       </div>
+                    </div>
+            </section>
+
+
+
+            <section class="sticker-slider">
+                <div class="container">
+                    <div class="sticker-slider__body">
+                        <h1 class="section-title sticker-slider__title">
+                            <img src="images/stickers/slider/fire.svg" alt="">
+                            Новые стикеры
+                        </h1>
+                        <div id="slider2">
+                            <div class="swiper-wrapper sticker-slider__content">
+                                <div class="swiper-slide sticker-slider__slide"><img src="images/stickers/slider/1.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide sticker-slider__slide"><img src="images/stickers/slider/2.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide sticker-slider__slide"><img src="images/stickers/slider/3.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide sticker-slider__slide"><img src="images/stickers/slider/4.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide sticker-slider__slide"><img src="images/stickers/slider/5.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide sticker-slider__slide"><img src="images/stickers/slider/6.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide sticker-slider__slide"><img src="images/stickers/slider/7.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide sticker-slider__slide"><img src="images/stickers/slider/8.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide sticker-slider__slide"><img src="images/stickers/slider/9.jpg"
+                                        alt=""></div>
+                            </div>
+                            <div class="sticker-pagination">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="form">
+                <div class="container">
+                    <div class="form__body">
+
+                        <h3 class="section-title form__title">
+                            Будь в курсе новинок! Подпишись на рассылку!
+                        </h3>
+
+                        <form action="" method="post" class="form__main" id="section-form">
+                                <div class="form__group">
+                                    <div class="form__error-block">
+                                        <input type="text" class="form__input" placeholder=" " id="input-1">
+                                        <label for="" class="form__label">Имя</label>
+                                    </div>
+                                </div>
+                                <div class="form__group">
+                                    <div class="form__error-block">
+                                        <input type="email" class="form__input" placeholder=" " id="input-2">
+                                        <label for="" class="form__label">E-mail</label>
+                                    </div>
+                                </div>
+                                <button class="section-button form__btn">
+                                    <span>Подписаться</span>
+                                </button>
+                        </form>
+
+
+                        <div class="form__form-animate">
+                            <!-- <img src="images/stickers/inputs/okay1.svg" alt="" id="form__ball-1">
+                        <img src="images/stickers/inputs/okay2.svg" alt="" id="form__ball-2">
+                        <img src="images/stickers/inputs/okay3.svg" alt="" id="form__ball-3">
+                        <img src="images/stickers/inputs/okay4.svg" alt="" id="form__ball-4"> -->
+                            <img src="images/stickers/inputs/okay-frame.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="file">
+                <div class="container">
+
+
+                    <div class="file__content">
+
+                        <div class="file__text">
+                          <div class="gsap-author">
+                            <h1 class="section-title">
+                                Стать автором
+                            </h1>
+                            <p class="file__subtitle">
+                                Если ты художник или стремишься им стать — добро пожаловать к нам!
+                            </p>
+                            <p class="file__article">
+                                Отправь нам от трёх до пяти своих работ и напиши свой ник в телеграме. Если наши
+                                кураторы решат, что нам по пути, то мы обязательно свяжемся с тобой и обговорим условия
+                                сотрудничества! Удачи!
+                            </p>
+                        </div>
+                            <div class="file__images">
+                                <img src="images/addingFiles/hands.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="file__add-block">
+
+                            <div class="file__main-input">
+                                <input type="file" class="file__add-input">
+                                <div class="file__input-overlay">
+                                    <div class="file__input-hint">
+                                        <img src="images/addingFiles/add-plus.png" alt="">
+                                        <p>Прикрепить работы (.jpeg / .png)</p>
+                                    </div>
+                                </div>
+                            </div>
+                          <div class="gsap-author">
+                            <input type="text" class="file__tg-input" placeholder="@telegram_nickname">
+
+                            <button class="section-button file__btn">
+                                <span>Отправить</span>
+                            </button>
+                          </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </section>
+
+
+
+            <section class="top-sail">
+                <div class="container">
+                    <div class="top-sail__body">
+                        <h1 class="section-title top-sail__title">
+                            Стать автором
+                        </h1>
+
+
+                        <div class="top-sail__items">
+
+                            <div class="top-sail__item">
+                                <img src="images/top-sale/big-pics/1.png" alt="">
+                                <div class="top-sail__text">
+                                    <div class="top-sail__user">
+                                        <img src="images/top-sale/avatars/1.jpg" alt="" class="top-sail__avatar">
+                                        <p class="top-sail__user-text">ttgs</p>
+                                    </div>
+                                    <h3 class="top-sail__sticker-name">
+                                        Holofobia1
+                                    </h3>
+                                    <div class="top-sail__price">
+                                        <p class="top-sail__price-crypt">4.70 ETH</p>
+                                        <p class="top-sail__price-dollars">($16,873.47)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-sail__item">
+                                <img src="images/top-sale/big-pics/2.png" alt="">
+                                <div class="top-sail__text">
+                                    <div class="top-sail__user">
+                                        <img src="images/top-sale/avatars/2.jpg" alt="" class="top-sail__avatar">
+                                        <p class="top-sail__user-text">Chris22</p>
+                                    </div>
+                                    <h3 class="top-sail__sticker-name">
+                                        Baby Joda
+                                    </h3>
+                                    <div class="top-sail__price">
+                                        <p class="top-sail__price-crypt">2.00 ETH</p>
+                                        <p class="top-sail__price-dollars">($7,121.04)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-sail__item">
+                                <img src="images/top-sale/big-pics/4.png" alt="">
+                                <div class="top-sail__text">
+                                    <div class="top-sail__user">
+                                        <img src="images/top-sale/avatars/4.jpg" alt="" class="top-sail__avatar">
+                                        <p class="top-sail__user-text">Tat_2</p>
+                                    </div>
+                                    <h3 class="top-sail__sticker-name">
+                                        Y.EEE
+                                    </h3>
+                                    <div class="top-sail__price">
+                                        <p class="top-sail__price-crypt">3.00 ETH</p>
+                                        <p class="top-sail__price-dollars">($10,731.24)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-sail__item">
+                                <img src="images/top-sale/big-pics/5.png" alt="">
+                                <div class="top-sail__text">
+                                    <div class="top-sail__user">
+                                        <img src="images/top-sale/avatars/5.jpg" alt="" class="top-sail__avatar">
+                                        <p class="top-sail__user-text">Oswaald</p>
+                                    </div>
+                                    <h3 class="top-sail__sticker-name">
+                                        Infinity_09
+                                    </h3>
+                                    <div class="top-sail__price">
+                                        <p class="top-sail__price-crypt">1.6109 ETH</p>
+                                        <p class="top-sail__price-dollars">($5,762.32)</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+        </main>
+
+
+
+
+        <footer>
+
+            <div class="footer__smiles-body">
+                <div class="container">
+
+                    <div class="footer__smiles-block">
+                        <div class="footer__smiles-content">
+                            <h3 class="footer__info">
+                                Для попадания в топ необходимо:
+                            </h3>
+                            <ul class="footer__info-items">
+                                <li class="footer__li">
+                                    <img src="images/footer/icon1.svg" alt="">
+                                    <p>Минимум пять опубликованных работ</p>
+                                </li>
+                                <li class="footer__li">
+                                    <img src="images/footer/icon2.svg" alt="">
+                                    <p>Инвайт трём коллегам по цеху</p>
+                                </li>
+                                <li class="footer__li">
+                                    <img src="images/footer/icon3.svg" alt="">
+                                    <p>Верифицированный аккаунт</p>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="footer__img"><img src="images/footer/smiles.png" alt=""></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer__down">
+                <p>
+                    AURA® | 2024
+                </p>
+            </div>
+
+        </footer>
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+
+    <script src="js/gsap/gsap.min.js"></script>
+    <script src="js/gsap/ScrollTrigger.min.js"></script>
+
+    <script src="js/sticker.js"></script>
+
+</body>
+
+</html>
